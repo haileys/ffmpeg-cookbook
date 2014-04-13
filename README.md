@@ -37,3 +37,9 @@ ffmpeg to rotate it when writing the output file:
 ```
 ffmpeg -i input.mov -vf transpose=1 -strict -2 output.mp4
 ```
+
+### Extracting audio from a video
+
+```
+ffmpeg -i input.mov -acodec pcm_s16le -ac 2 output.wav
+```
