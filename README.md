@@ -26,7 +26,7 @@ libpostproc    52.  3.100 / 52.  3.100
 ```
 
 ### Transcoding a .mov to an .mp4
-
+Converts a .mov video file into a .mp4 video file
 ```
 ffmpeg -i input.mov -strict -2 output.mp4
 ```
@@ -39,7 +39,7 @@ ffmpeg -i input.mov -vf transpose=1 -strict -2 output.mp4
 ```
 
 ### Extracting audio from a video
-
+Extracts a wave file from the input video file.
 ```
 ffmpeg -i input.mov -acodec pcm_s16le -ac 2 output.wav
 ```
