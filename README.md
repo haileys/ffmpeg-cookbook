@@ -47,3 +47,13 @@ Extracts a wave file from the input video file.
 ```
 ffmpeg -i input.mov -acodec pcm_s16le -ac 2 output.wav
 ```
+
+### Extracting a clip from a video
+
+Extracts a clip from the input video file.
+
+```
+ffmpeg -i input.mov -ss START_SECS -c copy -t CLIP_LENGTH output.mov
+```
+
+You can also transcode at the same time by changing the extension of the output file.
